@@ -32,11 +32,11 @@ const Home = () => {
   }
   return (
     <>
-    <div className='flex flexwrap gap-9'>
-    <div><RestaurantCard name="kfc" cuisine="chinese" rating = "4"></RestaurantCard></div>
-    <div><RestaurantCard name="hungry kitchen" cuisine="muglai" rating="4.5"></RestaurantCard></div>
-    <div><RestaurantCard name="singh foods" cuisine="thai" rating="5"></RestaurantCard></div>
-    {/* <div><RestaurantCard></RestaurantCard></div> */}
+    <div className='flex flex-wrap gap-6 justify-center'>
+    {res.map((restaurant) => (
+
+  <RestaurantCard key={restaurant.info.id} resData={restaurant?.info} />
+))}
     </div>
     
     </>
