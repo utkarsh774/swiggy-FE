@@ -33,10 +33,10 @@ const Home = () => {
   return (
     <>
     <div className='flex flexwrap gap-9'>
-    <div><RestaurantCard></RestaurantCard></div>
-    <div><RestaurantCard></RestaurantCard></div>
-    <div><RestaurantCard></RestaurantCard></div>
-    <div><RestaurantCard></RestaurantCard></div>
+    <div><RestaurantCard name="kfc" cuisine="chinese" rating = "4"></RestaurantCard></div>
+    <div><RestaurantCard name="hungry kitchen" cuisine="muglai" rating="4.5"></RestaurantCard></div>
+    <div><RestaurantCard name="singh foods" cuisine="thai" rating="5"></RestaurantCard></div>
+    {/* <div><RestaurantCard></RestaurantCard></div> */}
     </div>
     
     </>

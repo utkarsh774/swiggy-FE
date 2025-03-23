@@ -1,4 +1,4 @@
-const RestaurantCard = () => {
+const RestaurantCard = ({name,cuisine,rating}) => {
   return (
     <div className="w-48 bg-white border border-gray-300 rounded-lg shadow-sm overflow-hidden mt-2">
       <img 
@@ -7,9 +7,9 @@ const RestaurantCard = () => {
         className="w-full h-24 object-cover"
       />
       <div className="p-2">
-        <h2 className="text-md font-semibold text-gray-800">Restaurant</h2>
-        <p className="text-gray-600 text-xs">Cuisine</p>
-        <p className="text-yellow-500 font-semibold text-xs mt-1">⭐ 4.5</p>
+        <h2 className="text-md font-semibold text-gray-800">{name}</h2>
+        <p className="text-gray-600 text-xs">{cuisine}</p>
+        <p className="text-yellow-500 font-semibold text-xs mt-1">⭐ {rating}</p>
       </div>
     </div>
   );
