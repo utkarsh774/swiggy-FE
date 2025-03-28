@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import RestaurantCard from "../micro/RestaurantCard";
-
+import HomeShimmer from "../shimmer/HomeShimmer";
 const Home = () => {
   const [res, setRes] = useState([]);
 
@@ -25,7 +25,7 @@ const Home = () => {
   };
 
   if (res.length === 0) {
-    return <h1>Loading...</h1>;
+    return <HomeShimmer/>
   }
 
   return (
@@ -37,4 +37,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Home
